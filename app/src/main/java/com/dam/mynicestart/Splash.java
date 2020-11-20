@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class Splash extends AppCompatActivity {
 
@@ -12,6 +15,10 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        TextView linea = findViewById(R.id.signUp2);
+        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        linea.startAnimation(myAnim);
 
         openApp(true);
 
