@@ -22,4 +22,11 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    public void abrirSignup(View view) {
+
+        Intent i = new Intent(this, SignUpActivity.class);
+        startActivity(i);
+
+    }
 }

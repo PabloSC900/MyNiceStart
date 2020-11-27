@@ -78,7 +78,8 @@
         app:backgroundTint="#8C1111"
         app:layout_constraintEnd_toEndOf="@id/password"
         app:layout_constraintStart_toStartOf="@id/password"
-        app:layout_constraintTop_toBottomOf="@id/password">
+        app:layout_constraintTop_toBottomOf="@id/password"
+        style="@style/ButtonOutlined">
 
 
     </com.google.android.material.button.MaterialButton>
@@ -89,13 +90,14 @@
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:text="¿Ya tienes cuenta con nosotros?¡Inicia sesión!"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@id/btnLogin"
         app:layout_constraintStart_toStartOf="@id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        android:onClick="abrirLogin"/>
 
 
 
