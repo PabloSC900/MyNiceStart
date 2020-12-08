@@ -1,6 +1,10 @@
 # MyNiceStart
 [MyNiceStart en github](https://github.com/PabloSC900/MyNiceStart)
 
+La idea principal de esta aplicación consiste en una plataforma digital que sirva como guia para encontrar restaurantes y locales de estilo asiatico en tu ciudad.
+Las imagenes usadas estan pensadas de manera que le impriman ese caracter exotico para atraer al cliente, ademas de dejar clara la función principal de la app.
+Los colores elgidos buscan armonizar con esta idea para que, al integrarlos junto con las imagenes, creen una "única paleta".
+
 **Índice:**
 
 * Splash
