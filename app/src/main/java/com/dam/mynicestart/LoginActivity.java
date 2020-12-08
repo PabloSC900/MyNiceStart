@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Ventana
+ *@author pablo
+ * @see LoginActivity
+ */
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override

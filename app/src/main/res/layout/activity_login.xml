@@ -18,7 +18,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username"
+        android:id="@+id/usernameLogin"
         android:layout_width="300dp"
         android:layout_height="60dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,10 +35,10 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
+        android:id="@+id/passwordLogin"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/usernameLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:endIconMode="password_toggle">
@@ -61,9 +61,9 @@
         android:text="Log in"
         android:textSize="18sp"
 
-        app:layout_constraintEnd_toEndOf="@id/password"
-        app:layout_constraintStart_toStartOf="@id/password"
-        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintEnd_toEndOf="@id/passwordLogin"
+        app:layout_constraintStart_toStartOf="@id/passwordLogin"
+        app:layout_constraintTop_toBottomOf="@id/passwordLogin"
         style="@style/ButtonStraight"
         android:onClick="abrirMain">
 
@@ -73,7 +73,7 @@
 
 
     <TextView
-        android:id="@+id/signUp"
+        android:id="@+id/signUpLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
