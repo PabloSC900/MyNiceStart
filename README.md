@@ -49,12 +49,29 @@ La pantalla de Sign Up cuenta con:
 **Main**
 
 La pantalla de Main cuenta con:
+* **Una ImageView**: cargada con Glide.
 * **Un Button**: te permite acceder al Main2
+* **Un AppBar**: cada uno de sus iconos con una función
+* **Un AlertDialog**: aparece al selecionar uno de los iconos del Appbar
+* **Un SwipeRefesh con snackbar**: te permite refrescar la pestaña y, a continuación, deshacer la acción si asi lo deseas
+* **Un ExpandableCardView**: al pulsar aparece una tarjeta para mostrar información. Puedes volver a ocultarla
+* **Un Menu Contextual**: que surge al mantener pulsado la foto del centro de la pantalla, permietiendote elegir una de las dos opciones que muestra
+
+
 
 ![](img/captura_main.PNG)
+![](img/captura_main_dialog.PNG)
+![](img/captura_main_ec.PNG)
+![](img/captura_main_swipe.PNG)
+
+
+
 
 **Main2**
 
-La pantalla de Main2 tan solo uenta con una opción para volver a la panatalla Main, al pulsar la flecha situada en la parte superior izquierda
+La pantalla de Main2 tan solo cuenta con:
+
+* **Un MenuBottomBar**: un menu en la parte inferior de la pestaña con un botón flotante
+*Una opción para volver a la panatalla Main, al pulsar la flecha situada en la parte superior izquierda
 
 ![](img/captura_main2.PNG)

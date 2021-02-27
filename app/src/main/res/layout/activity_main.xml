@@ -2,20 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_context"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/btnOK"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/myswipe">
+        <TextView
+            android:id="@+id/taporswipetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="long tap or swipe to refresh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/bgMain"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:scaleType="centerCrop"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainAcceder"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Acceder"
+        app:layout_constraintTop_toBottomOf="@id/bgMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        style="@style/ButtonStraight"
         android:onClick="abrirMain2"/>
+
+
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/lExpandView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorAccent"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:inner_view="@layout/expandable_view"
+        app:startExpanded="false"
+        app:title="Workers" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
